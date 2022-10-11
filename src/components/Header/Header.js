@@ -16,9 +16,9 @@ const Header = () => {
             }
             </div>
             <ul className={`md:flex w-full md:static absolute duration-500 ease-in ${open ? 'top-15' : 'top-[-120px]'}`}>
-                <li className='mr-6'><Link to='/'>Home</Link></li>
+                <li className='mr-6'><Link to='/'>Topics</Link></li>
                 <li className='mr-6'><Link to='/statistics'>Statistics</Link></li>
-                <li className='mr-6'> <Link to='/topics'>Topics</Link></li>
+                {/* <li className='mr-6'> <Link to='/topics'>Topics</Link></li> */}
                 <li className='mr-6'> <Link to='/blog'>Blog</Link></li>
             </ul>
            </div>

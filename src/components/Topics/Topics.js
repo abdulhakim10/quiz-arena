@@ -1,23 +1,17 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Quiz from '../Quiz/Quiz';
+import Card from '../Card/Card';
 
 const Topics = () => {
-    const quiz = useLoaderData();
-    const {name, questions} = quiz.data;
-    console.log(quiz)
+    const topics = useLoaderData();
     return (
-        <div className='m-12'>
-            <h2 className='text-2xl font-medium text-center'>{name}</h2>
-            <h2 className='text-lg font-medium text-center'>Total Quiz: {questions.length}</h2>
-            <div className='grid md:grid-cols-2'>
+        <div className='grid md:grid-cols-2 gap-6 m-12'>
             {
-                questions.map(ques => <Quiz 
-                key={ques.id}
-                ques={ques}
-                ></Quiz>)
-            }     
-            </div>  
+                topics.data.map(topic => <Card 
+                    key={topic.id}
+                    topic={topic}
+                    ></Card>)
+            }
         </div>
     );
 };
