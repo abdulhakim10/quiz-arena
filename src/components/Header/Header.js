@@ -16,9 +16,9 @@ const Header = () => {
             }
             </div>
             <ul className={`md:flex w-full md:static absolute duration-500 ease-in ${open ? 'top-15' : 'top-[-120px]'}`}>
-                <li className='mr-6 hover:bg-blue-400 p-1 rounded-md hover:text-white'><Link to='/'>Topics</Link></li>
-                <li className='mr-6  hover:bg-blue-400 p-1 rounded-md hover:text-white'><Link to='/statistics'>Statistics</Link></li>
-                <li className='mr-6  hover:bg-blue-400 p-1 rounded-md hover:text-white'> <Link to='/blog'>Blog</Link></li>
+                <Link to='/'><li className='mr-6 hover:bg-blue-400 p-1 rounded-md hover:text-white'>Topics</li></Link>
+                <Link to='/statistics'><li className='mr-6  hover:bg-blue-400 p-1 rounded-md hover:text-white'>Statistics</li></Link>
+                <Link to='/blog'><li className='mr-6  hover:bg-blue-400 p-1 rounded-md hover:text-white'> Blog</li></Link>
             </ul>
            </div>
         </nav>
