@@ -11,7 +11,7 @@ const Quiz = ({ques}) => {
     //handler to checking answer
     const handler = option => {
         if(option === correctAnswer){
-            const correct = 'correct answer'
+            // const correct = 'correct answer'
             // setAnswer(correct);
             const notify = () =>{
                 toast('Correct Answer')
@@ -19,7 +19,7 @@ const Quiz = ({ques}) => {
             notify()     
         }
         else{
-            const incorrect = 'incorrect answer'
+            // const incorrect = 'incorrect answer'
         //    setAnswer(incorrect)
            
     // toast
