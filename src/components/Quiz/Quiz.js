@@ -34,7 +34,7 @@ const Quiz = ({ques}) => {
     }
 
     return (
-        <div className='border-2 border-blue-400 rounded-md bg-blue-100
+        <div className='border-2 border-blue-400 rounded-lg bg-blue-100
          m-6 p-6'>
             <div className='flex items-center justify-between'>
             <h3 className='text-2xl font-semibold'>{question}</h3>
@@ -45,7 +45,7 @@ const Quiz = ({ques}) => {
             <div className='grid md:grid-cols-2 gap-4 mt-8'>
             {
                 options.map(option => <p onClick={() => handler(option)}
-                className='hover:bg-slate-200 p-2 rounded border-2 border-blue-400 text-center'>{option}</p> )
+                className='hover:bg-white p-2 rounded-lg border-2 border-blue-400 text-center'>{option}</p> )
             }
             </div>
             <div className='mt-6'>
