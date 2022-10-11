@@ -1,9 +1,17 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Card from '../Card/Card';
 
 const Home = () => {
+    const topics = useLoaderData();
     return (
-        <div>
-            <h2>this is Home</h2>
+        <div className='grid md:grid-cols-2 gap-6 m-12'>
+            {
+                topics.data.map(topic => <Card 
+                    key={topic.id}
+                    topic={topic}
+                    ></Card>)
+            }
         </div>
     );
 };
