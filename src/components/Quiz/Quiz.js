@@ -43,7 +43,7 @@ const Quiz = ({ques}) => {
 
             {/* quiz questions */}
             <div className='flex items-center justify-between'>
-            <h3 className='text-2xl font-semibold'>{question}</h3>
+            <h3 className='text-2xl font-semibold'>{question.slice(3, -4)}</h3>
 
             {/* eye icons */}
             <div>
