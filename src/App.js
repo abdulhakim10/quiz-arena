@@ -41,10 +41,12 @@ const router = createBrowserRouter([
       }
     ],
   },
+
+  // 404 route
   {
     path: '*',
     element: <div className='text-center mt-20'>
-      <h1 className='text-6xl font-bold text-red-500'>error... 4O4</h1>
+      <h1 className='text-6xl font-bold text-red-500'>error... 404</h1>
       <h2 className='text-3xl font-semi-bold text-gray-500'>Page Not Found</h2>
       <p className='text-lg font-medium text-gray-400'>please check your path..!</p>
     </div>

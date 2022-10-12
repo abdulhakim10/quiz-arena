@@ -5,11 +5,14 @@ import { Bars4Icon, XMarkIcon} from '@heroicons/react/24/solid'
 const Header = () => {
     const [open, setOpen] = useState(false);
     return (
+        // navbar
         <nav className='flex items-center justify-between m-12 border rounded-lg border-blue-400 p-6'>
             <div>
             <h3 className='text-2xl font-serif'>Quiz Arena</h3>
             </div>
            <div>
+            
+            {/* menubar */}
            <div onClick={() => setOpen(!open)} className='h-6 w-6 md:hidden flex'>
             {
                 open ? <XMarkIcon></XMarkIcon> : <Bars4Icon/>

@@ -3,9 +3,6 @@ import { useLoaderData } from 'react-router-dom';
 import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 
-
-
-
 const Statistics = () => {
     const topics = useLoaderData([]).data
     // console.log(topics)
